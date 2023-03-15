@@ -1,52 +1,33 @@
-.timer {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
   padding: 20px;
 }
-.first {
+.minContainer {
   display: flex;
-  flex-direction: column;
-}
-.circleWrapper {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  color: #5e5df0;
-  width: 100%;
-  min-width: 60vh;
-  margin-top: 20px;
-}
-.circle {
-  position: relative;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  background-color: indigo;
+  color: #fff;
+  width: 400px;
+  height: 400px;
+  gap: 50px;
+  clip-path: polygon(
+    50% 0%,
+    83% 12%,
+    100% 43%,
+    94% 78%,
+    68% 100%,
+    32% 100%,
+    6% 78%,
+    0% 43%,
+    17% 12%
+  );
 }
-.input {
-  font-size: 14px;
-  border-radius: 6px;
-  line-height: 1.5;
-  padding: 5px 10px;
-  transition: box-shadow 100ms ease-in, border 100ms ease-in,
-    background-color 100ms ease-in;
-  border: 2px solid #dee1e2;
-  color: rgb(14, 14, 16);
-  background: #ffffff;
-  display: block;
-  height: 36px;
-  outline: none;
-  margin-bottom: 5px;
-}
-.input:hover {
-  border-color: #ccc;
-}
-.input:focus {
-  border-color: #9147ff;
-  background: #fff;
-}
-.startPause {
+.btnActions {
   background: #5e5df0;
   border-radius: 999px;
   box-shadow: #5e5df0 0 10px 20px -10px;
@@ -69,11 +50,16 @@
   width: fit-content;
   word-break: break-word;
   border: 0;
-  margin: 5px;
+  margin-left: 30px;
 }
-.seconds,
-.hours,
-.minutes {
-  position: absolute;
-  font-size: 2rem;
+.numbers {
+  width: 70px;
+  text-align: center;
+}
+.btnWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  gap: 50px;
 }
